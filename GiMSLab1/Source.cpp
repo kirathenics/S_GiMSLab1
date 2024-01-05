@@ -45,19 +45,6 @@ typedef struct tBITMAPINFOHEADER
 	DWORD biClrImportant;
 }sInfoHead;
 
-/*//Заголовок файла BSO
-typedef struct tBSOHEADER
-{
-	WORD bfType;
-	WORD bfVersion;
-	LONG bfProgramName;
-	DWORD bfSize;
-	WORD bfHeaderSize;
-	DWORD bfRasterSize;
-	BYTE bfBytePerPixel;
-	DWORD bfWidth;
-}sBSOHead;*/
-
 //Заголовок файла BSO
 typedef struct tBSOHEADER
 {
