@@ -381,7 +381,6 @@ void MedianFilter()
 				}
 			}
 
-			// Sort the values using the weights
 			sort(windowValues.begin(), windowValues.end(), [&](Color a, Color b) 
 				{
 				int intensityA = a.red + a.green + a.blue;
@@ -389,7 +388,7 @@ void MedianFilter()
 				return intensityA * weights[4] < intensityB * weights[4];
 				});
 
-			// Set the median value to the center pixel
+			// происвоить значение центрального элемента
 			src_image[i * width + j] = windowValues[4];
 		}
 	}
